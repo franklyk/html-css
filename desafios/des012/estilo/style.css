@@ -5,11 +5,20 @@
 
 @import url('https://fonts.googleapis.com/css2? family= Passion+One & family= Sriracha & display=swap');
 
+@font-face {
+    font-family: 'America';
+    src: url(../fontes/American\ Signs.otf) format('opentype');
+}
+ 
+@font-face {
+    font-family: 'Black-Parade';
+    src: url(../fontes/Black\ Parade\ -\ Personal\ Use.otf) format('opentype');
+}
+
 :root{
     --font1: Verdana, Geneva, Tahoma, sans-serif;
-    --font2: 'Passion One', cursiva;
-    --font3: 'Sriracha', cursiva;
-    --font4: 
+    --font2: 'America', cursiva;
+    --font3: 'Black-Parade', cursiva;
 }
 
 *{
@@ -29,7 +38,7 @@ header{
     text-align: center;
 }
 header > h1 {
-    font-size: 2em;
+    font-size: 10vw;
     font-family: var(--font2);
     padding-top: 40px;
     padding-bottom: 10px;
@@ -56,10 +65,12 @@ a:hover {
     
 }
 section {
+    font-size: 7vw;
     font-family: var(--font3);
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;padding-left: 30px;
+    line-height: 1.3em;
+    padding-left: 30px;
 }
 
 section.normal {
@@ -73,7 +84,8 @@ section.imagem {
 }
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.171);
-    width: 200px;
+    display: inline-block;
+    padding: 5px;
 }
 
 footer {
